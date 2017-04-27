@@ -1,0 +1,438 @@
+<tw-storydata name="Twine Game" startnode="3" creator="Twine" creator-version="2.1.1" ifid="EA25B09C-A8AD-41EC-B89A-19903529B364" format="Harlowe" format-version="1.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-passage {
+  background-color : #000000;
+  color : #ffffff;
+  font-family : Arial; 
+}
+tw-link {
+  color : #004d00;
+}
+tw-link:hover {
+ color : #006600;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="398,102">&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+
+You wake up in your room. Errant rays of sunshine slip through the curtains. Your eyes are heavy, your mind still tethered to the world of sleep. Remnants of dreams dance in the thin coloumns of light, fastly fading phantasms slipping through the shadows. What will you do?
+
+&lt;img src = &quot;http://i.imgur.com/x6tTXwz.png&quot; width=100% height=100% /&gt; 
+
+[[Keep Sleeping.-&gt;Start]]
+[[Get out of bed. -&gt; Up]]
+
+(set: $inventory to (datamap: &quot;rice&quot;, true))</tw-passagedata><tw-passagedata pid="2" name=" Up" tags="" position="598,101">The sunlight starts a spark in your mind. As you open your eyes, the spectres of sleep flee your vision, and your room comes into focus. Gathering your fortitude, you peel off your hefty blanket and sit upright. The morning is cool, but not cold; spring is here, and with it a merciful warmth. Bidding your dreams one last goodbye, you step out of bed. 
+
+What will you do?
+(set: $room to &quot;Up&quot;)
+
+
+[[Gather your things, get prepared, and leave the room. -&gt; next]]
+[[Find your cat, Cyn. -&gt; cat]]
+[[Check inventory -&gt; Inventory]]
+</tw-passagedata><tw-passagedata pid="3" name="Start Screen" tags="" position="201,105">&lt;img src = &quot;http://i.imgur.com/LNpgJKt.png&quot; width=100% height=100% /&gt; 
+
+[[Begin Your Life As an Assassin-&gt;Start]]
+[[See Credits -&gt; Credits]]
+
+</tw-passagedata><tw-passagedata pid="4" name=" next" tags="" position="501,500">You gather your possessions, and walk out into the hallway and close the door behind you. Cyn follows you, mumbling under his breath about your incompetence.
+
+You see before you a long, somewhat narrow, hallway with multiple doors subsequently placed on either side. How do you proceed?
+
+[[Walk through the hall without stopping. -&gt; Entrance]]
+[[Check the doors to see if any are open. -&gt; Cyn_Complains]]</tw-passagedata><tw-passagedata pid="5" name=" cat" tags="" position="800,102">It takes a few moments of searching before your eyes alight on a familiar figure. Cyn sits regally on your dresser, tail swaying back and forth. 
+
+&quot;You&#x27;re up late.&quot; A remarkably human voice escapes the ashen cat. &quot;You must have had an exciting dream. You kicked me off the bed.&quot; Cyn&#x27;s tail flicks, as if to punctuate his words. 
+
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+
+Try as you might to remember, your dreams are already forgotten. You scartch behind his ears in apology. 
+
+&quot;It&#x27;s getting late. We should go.&quot;
+(set: $room to &quot;cat&quot;)
+[[Late for what? -&gt; CynSpeech1]]
+[[Gather your things, get prepared, and leave the room. -&gt; next]]
+[[Check inventory. -&gt; Inventory]]</tw-passagedata><tw-passagedata pid="6" name=" CynSpeech1" tags="" position="1003,499">&quot;For what?&quot; the cat scoffs, shaking his head dramatically. You feel flush, clearly missing something. &quot;You must be half asleep. The parade!&quot; 
+
+The parade? Today? You check the calander on the wall. Cyn marked each day with a paw print, forming a trail along the boxes. It ended on the 18th of Blossomtide, the princess&#x27;s birthday. Somehow you had gotten the days confused, and thought the parade to be a week away. Where had the time gone? 
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+&quot;You thought it was the 11th? How? Why do I even bother with the calander if you&#x27;re never going to look at it?&quot; Cyn chides you for your negligence, jumping on to your desk. &quot;Your parents spoiled you. What if you had missed a week of class?&quot; You pretend to listen as Cyn lectures you, as unforgiving as ever. 
+
+&quot;Alright, come on now. It&#x27;s almost 11 o&#x27; clock.&quot; What will you do?
+
+[[Gather your things, get prepared, and leave the room. -&gt; next]]</tw-passagedata><tw-passagedata pid="7" name=" Inventory" tags="" position="700,401">(if: $inventory&#x27;s rice is true)[3 grains of rice]
+
+[[Go back. -&gt; $room]]</tw-passagedata><tw-passagedata pid="8" name=" $room" tags="" position="1002,201">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name=" Credits" tags="" position="203,302">**Unlimited Game Works**
+
+-*Ryan Buchanan* : Story, Programming, &amp; Dialogue
+
+-*Darren Sander* : Story, Programming, &amp; Dialogue
+
+-*Justice Brown* : Art &amp; Story</tw-passagedata><tw-passagedata pid="10" name=" Entrance" tags="" position="476,637">You walk into the grand entrance hall. The room is lavishly decorated, to impress guests. There are multiple elaborate portraits of the royal family adorning the walls, exotic and expensive rugs covering the floors. Hanging from the ceiling is a massive intricate crystal chandelier that is maybe 8 meters wide and shimmers like the sun. 
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+Cyn comments, &quot;This place is so gaudy it hurts.&quot;
+
+How do you respond?
+
+[[&quot;You shouldn&#x27;t insult the royal family that way -&gt; disagree]]
+[[&quot;Yeah, it is pretty ugly huh?&quot; -&gt; agree]]
+[[Remain non-commital. -&gt; no comment]]</tw-passagedata><tw-passagedata pid="11" name=" Cyn_Complains" tags="" position="700,599">&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+Cyn sees you messing with the doors and stops you saying, &quot;Do you want to go to the dungeon? Because that&#x27;s how you get sent to the dungeon.&quot;
+
+[[Return -&gt; next]]</tw-passagedata><tw-passagedata pid="12" name=" disagree" tags="" position="339,780">Cyn replies, &quot;Since when have I ever cared about offending anyone?&quot; You try to remember a time when Cyn ever appologized for his actions, and cant. 
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+&quot;You&#x27;ve been given a slice of nobility, and now you think just like them. Come now, do you really think they need so many candles? And on one fixture?&quot; Cyn does the cloest thing to a sigh his tiny lungs will accomodate, moving towards the entrance way.
+
+[[Leave the building. -&gt; exit]]</tw-passagedata><tw-passagedata pid="13" name=" agree" tags="" position="606,792">&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+Cyn has a point. This place is way overdone. And it&#x27;s only a dormatory- you can only imagine what the palace looks like. &quot;Yes it is. Just imagine how much all this crap costs, just to impress a bunch of people you don&#x27;t even like.&quot; Cyn groans, moving towards the entryway. Coming from a cat, it is a pointed criticism. 
+
+[[Leave the building. -&gt; exit]]</tw-passagedata><tw-passagedata pid="14" name=" no comment" tags="" position="476,787">&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+Cyn&#x27;s always complaining about something. He&#x27;s rather judgemental for a talking ball for fur. He doesn&#x27;t seem to take offense to your silence, and the two of you advance towards the entranceway.
+
+[[Leave the building. -&gt; exit]]</tw-passagedata><tw-passagedata pid="15" name=" exit" tags="" position="476,937">The decorative double doors that mark the entrance of the royal dormatory remain open from early in the morning to late at night. When they close, a smaller passway can be accessed by key. You haven&#x27;t been given one yet, so it would be wise to be back before sundown. Cyn reminds you of this as you leave the building.
+
+The morning air is brisk and refreshing. A few clouds float through the otherwise clear, blue sky. The sun sits at an angle in the sky to the north. The lesser moon, Marina, is visible to the west; a small, blue orb floating in the ether. A light wind blows from the south, not quite strong enough to lift your cloak. 
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+&quot;A good day for sun bathing,&quot; Cyn remarks. &quot;Perhaps I&#x27;ll skip the parade after all...&quot;
+
+[[&quot;What? Don&#x27;t make me go alone!&quot; -&gt; protest]]
+[[&quot;Alright, I&#x27;ll be fine by myself.&quot; -&gt; don&#x27;t protest]]</tw-passagedata><tw-passagedata pid="16" name=" protest" tags="" position="401,1087">&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+Cyn snickers, seeming pleased with himself. &quot;I&#x27;m joking, I&#x27;m joking. Come on now. You need your cat to look after you? I know you couldn&#x27;t find your out of bed if it weren&#x27;t for me. I wouldn&#x27;t let you go into the city alone. Now, stay still a moment.&quot; You see Cyn crouch, and you brace your shoulders. He leaps up from the grounds and vaults onto your shoulder, wrapping himelf around the back of your neck. &quot;Ah, much better. Shall we?&quot;
+
+[[Head towards the parade -&gt; city]]</tw-passagedata><tw-passagedata pid="17" name=" don&#x27;t protest" tags="" position="551,1087">&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+Cyn laughs, seemingly pleased. &quot;Well, you&#x27;ve certainly grown. And here I thought I&#x27;d tease you. Well, don&#x27;t worry- I&#x27;ll be coming along, whether you want me to or not. If you manage to get yourself in trouble I&#x27;ll be out of a room- they don&#x27;t accepts cats into the Order. Any way, we&#x27;d better get moving. Stay still a moment.&quot; You see Cyn crouch, and you brace your shoulders. He leaps up from the grounds and vaults onto your shoulder, wrapping himelf around the back of your neck. &quot;Ah, much better. Shall we?&quot;
+
+[[Head towards the parade -&gt; city]]</tw-passagedata><tw-passagedata pid="18" name=" city" tags="" position="473,1229">You start moving towards the city proper. Your dormatory is built near the western wall, at the edge of the Noble District. The city is divided into bands propagating from the palace, with the Noble Distict being the most modestly populated and well maintained. Guards of the higher orders patrol the streets, armored in brilliant parades and equipped with three styles of blade. The roads are spacious, wide enough to accomodate two noble processions side by side. Trees and lawns span the public spaces, with flower beds kept and maintained by court appointed gardners. It is a small paradise in the otherwise tumultuous world. 
+
+The parade would begin at the palace and proceed to the cities center district, moving from West to East. It would then circle the central band, making its pilgrimage through the streets. It was said that the parade followed the laylines beneath the city, a sort of ritual to coax out magic from beneath the ground. 
+
+[[You head towards the Middle District -&gt; Middle District]]</tw-passagedata><tw-passagedata pid="19" name=" Middle District" tags="" position="497,1367">The cities central band is less lavish than the Noble District. All but the main streets are narrow, just wide enough to accomodate a cart. The roads are less evenly paved, and except for frequent window-gardens, it all but lacks greenery. Still, it is relatively safe and its inhabitants wealthy. The capital&#x27;s oppulence extends beyond the Noble District, and even the poorer central city is held to high standards. The buildings are made almost entirely from stone, permanent fixtures on the landscape. Glasswork is common, and the streets are lively and full of commerce.
+
+You head towards the city square, where the parade will official begin. The streets are already filled with people. Merchants have moved their stalls onto every corner and into every alley, making the normally spacious square hard to navigate. You feel the cat around your neck flex, beating your cheek with his tail. 
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+&quot;Crowded as ever. You forget how many people inhabit this city when you spend so much time in the noble district.&quot; Cyn keeps his voice low, pretending to nuzzle your neck. Talking cats tend to call attention, so he keeps his presence low. &quot;Maybe we could find somewhere with a better view?&quot;
+
+Cyn had a point. Your short stature made it difficult to look over the people in the crowd, and you couldn&#x27;t push your way through. You knew a couple of places that might make it easier to see the parade. 
+
+[[Go the temple. You can sneak up to the balcony to get a better view. -&gt; Balcony]]
+[[There&#x27;s a warehouse nearby with a flat roof. You&#x27;re good at climbing, and could easily get up. -&gt; Roof]]
+[[If you show the guards your order seal, they would probably let you into the area for nobles. -&gt; Noble Area]]</tw-passagedata><tw-passagedata pid="20" name=" Balcony" tags="" position="299,1502">You decide to head to the temple. They&#x27;re pretty forgiving towards children, so they probably won&#x27;t mind, even if you get caught where you shouldn&#x27;t be. The temple overlooks the market place, with a convenient balcony that wraps around the second floor. From there, you can get a good view of the parade. 
+
+The temple is made of solid stone, with a tall and impossing dome. Statues of the gods surround the central chamber, where people gather to hear sermons. By the lectern is a priestess dressed in temple garb, giving directing a standard mid-morning prayer. Most of the atendents are old, and with their eyes closed and hands clapsed, seem focused on something internal. You head to the left, and find a set of stairs that leads to the second floor. There&#x27;s a rope and a sign that says something about not entering, but you duck under it and head up stairs. 
+
+The second floor seems to be empty. You make your way to the balcony without interference. You stand at the edge, looking down into the square. 
+
+[[Wait for the parade -&gt; paradebalcony]]
+
+</tw-passagedata><tw-passagedata pid="21" name=" Roof" tags="" position="498,1502">You circle around the square, dodging traffic and slipping by overbearing merchants. The warehouse serves as storage for the Capital Garden, a famous inn and tavern. You&#x27;ve never been there, but you know it&#x27;s always busy. 
+
+The warehouse is tall, but for a climber of your caliber should be no problem to scale. The walls are made of rough hewn stone, with windowsills on the second floor. Unused boxes and barrels line the alley, and give you a slight boost. 
+
+Cyn pounces off your shoulder, onto a barrel, and onto the wall. In a movement too fast and fluid to break down into moments, he ascends the wall, as if running straight up it. He looks down at you from the top, with the cat equivlant of a smug smile. &quot;Don&#x27;t hurt yourself on the way up,&quot; he taunts, licking his paws. You&#x27;re up for the challange. 
+
+You follow a similar path, climbing on top of the barrel before gitting a grip on the wall. The crecives make climbing easy, especially with your small hands and feet. It takes you about thirty seconds to reach the roof. You hook one hand around the rim and then the other, and pull yourself up. 
+
+Predictably, you and Cyn were alone on the roof. From here you could see the plaza in its entirety. You find a spot with a good view of the main street and lay down, peering over the edge.
+
+[[Wait for the parade -&gt; paraderoof]]</tw-passagedata><tw-passagedata pid="22" name=" Noble Area" tags="" position="701,1501">You decide to take advantage of your nobility, or at least give it your best effort. Parades had sections cordoned off for noble families, supposedly for security reasons. If you show them your seal, they ought to let you in.
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+&quot;Going to stand with prissy nobles? Oh joy. I thought we would get a moment away from them.&quot; You ignore Cyn&#x27;s sarcasm, and crossing the plaza, aproach the line of guards. One of them looks down at you, tall and imposing. He&#x27;s wearing steel scale mail with a large steel shield, emblazoned with the emblem of the city guard. 
+
+His expression is incredulous. You decide it would be easier to skip the explanation, and just show him your seal. His eyes widen, cracking his rocky expression. It was hard to understand what adults were thinking, but you thought there was something strange about his look of surprise. He turned his body, giving you passage. 
+
+A stand had been set up for the lesser nobility to attend. Guards like the one you just passed formed a parimeter around the general area. There is much more room to breath, and the stand offers a vantage point over the plaza. You ascend the stairs. 
+
+[[Wait for the parade -&gt; paradestands]]</tw-passagedata><tw-passagedata pid="23" name="King_Approaches" tags="" position="1100,1797">The King struts up to you with an air of pomposity that annoys you. &quot;Ah, finally! I have been searching for you everywhere lad. I have a new mission for you.&quot;
+&lt;img src = &quot;http://i.imgur.com/0dIgsBU.png&quot; width=400 height=500/&gt;
+[[Ask for details-&gt;Mission]]
+[[Accept without question-&gt;Mission_NoDetails]]</tw-passagedata><tw-passagedata pid="24" name="Mission" tags="" position="999,2001">&quot;I need you to take care of someone for me. This individual has opposed my rule for quite a while, publicly denouncing my policies, and inciting unrest amongst the citizens. They have gone so far as to question my legitimacy as King, and there have been rumors of a coup. They need to be dealt with quickly and efficiently, as to eliminate that possibility. Their name and location are both inside this envelope, do not open it unless you are sure you are alone.&quot; 
+&lt;img src = &quot;http://i.imgur.com/0dIgsBU.png&quot; width=400 height=500/&gt;
+The King hands you a sealed envelope with the full mission briefing.
+
+&quot;Now hurry the hell up before they decide to act!&quot;
+
+[[Take the Envelope and begin the mission-&gt;Mission_Location]]</tw-passagedata><tw-passagedata pid="25" name="Mission_NoDetails" tags="" position="1200,2000">&quot;Excellent! A subject that obeys without qeustion. It&#x27;s about damn time! If only my daughter behaved that well. Her attitude lately makes me worry about where her allegiences really lie. Damn dark elves are sneaky and untrustworthy at their very cor. Wouldn&#x27;t you agree lad?&quot; 
+&lt;img src = &quot;http://i.imgur.com/0dIgsBU.png&quot; width=400 height=500/&gt;
+[[&quot;How can you think your own daughter that way?&quot;-&gt;Back_Talk]]
+[[You nod in agreement to passify him.-&gt;Mission]]</tw-passagedata><tw-passagedata pid="26" name="Back_Talk" tags="" position="1201,2200">&quot;What did you just say to me BOY! I was just praising your behavior and you back-sass me like that!?! I&#x27;ll show you to talk to me that way!&quot; The King proceeds to smack you across the face with his cane. You fail to flinch however, because the King is not very strong. 
+&lt;img src = &quot;http://i.imgur.com/0dIgsBU.png&quot; width=400 height=500/&gt;
+[[I appoligize sir, I was out of line. You said you had a mission for me?-&gt;Mission]]</tw-passagedata><tw-passagedata pid="27" name="Mission_Location" tags="" position="999,2203">You find yourself observing a noble&#x27;s mansion roughly 5 kilometers south of the Capitol. Through the tree you are perched upon, you see a large building in the center of a roughly circular clearing, which is then surrounded by forest. The mansion is large, but not the largest you&#x27;ve ever had the pleasure of breaking into. That doesn&#x27;t take away from the fact that it is a stunningly beautiful building however. Intricate detail covers the grey stone work near the base, dark wood supports frame the white walls in between. The roof is gently sloped and covered in overlapping ceramic tile, and incrementally along the edge of the roof are menacing gargoyles roughly the size of a dog. There are tens of windows covering all sides of the mansion, framed with patterned hardwood. However, only a few show any sort of lighting inside, indicating that the majority of the occupants are asleep. You notice that there are relatively few gaurds scattered around the perimeter. Which likely means that the bulk of their defensive force is inside. You take this as a good sign, because it likely means they are not expecting...company.
+
+
+There is a path to the backside of the mansion through the forest to your right, and is completely clear of enemies. The clearing in front of the mansion is realively dark and covered in tall grass, but also has regular patrols. 
+
+[[Go through the forest to get a view of the back of the mansion-&gt;Back]]
+[[Try your luck out front-&gt;Front]]
+</tw-passagedata><tw-passagedata pid="28" name=" paradebalcony" tags="" position="300,1666">&quot;The parade should be here soon,&quot; Cyn said, jumping off your shoulder and onto the balcony rail. &quot;They should be coming form the West. Look towards the palace.&quot; 
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+You move down the balcony until you have a good view past the central fountain, and down the main street which leads towards the palace. Between the Middle and Noble districts runs a water way, with a bridge spanning the gap. The bridge is protected by a tall portcullis, the bars made of some gleaming, green metal. You can see soldiers on horses waiting just beyond the gate. 
+
+After a few moments it rises, and when the portcullis is fully drawn, the soldiers proceed forward. Behind them is a long line of carriages, with figures sitting on top. From this distance you cannot make out their faces, but you can assume who is who by the size of the carriage and their escorts. The king&#x27;s carriage was in the middle, the most well adorned. 
+
+[[Continue -&gt; paradebalcony2]]</tw-passagedata><tw-passagedata pid="29" name=" paraderoof" tags="" position="503,1663">The roof offers a great deal of privacy, and you and Cyn can talk freely. You can see the stands set up for nobles, and the temple  across the square. 
+&lt;img src = &quot;http://i.imgur.com/O2onYpm.png&quot; width=500 height=500 /&gt;
+&quot;The parade should be here soon,&quot; Cyn said, climbing onto your back. &quot;They should be coming form the West. Look towards the palace.&quot; 
+
+Between the Middle and Noble districts runs a water way, with a bridge spanning the gap. The bridge is protected by a tall portcullis, the bars made of some gleaming, green metal. From your vantage point on the roof, you can see soldiers on horses waiting just beyond the gate. 
+
+After a few moments it rises, and when the portcullis is fully drawn, the soldiers proceed forward. Behind them is a long line of carriages, with figures sitting on top. From this distance you cannot make out their faces, but you can assume who is who by the size of the carriage and their escorts. The king&#x27;s carriage was in the middle, the most well adorned. 
+
+[[Continue -&gt; paraderoof2]]</tw-passagedata><tw-passagedata pid="30" name=" paradestands" tags="" position="704,1663">It&#x27;s fairly quiet in the stands, and you don&#x27;t have to worry about having your pocket picked. The lesser nobility were those who did not have the honor of participating in the parade, but were still highly regarded. Lords and Ladies visiting from afar also gathered here, along side some of the cities richer denizens. 
+
+From the stands you do not have a good view of the palace, but it should be easy to observe the parade. You find a spot near the front of the stands to watch from.
+
+[[Continue -&gt; paradestands2]]</tw-passagedata><tw-passagedata pid="31" name=" paradebalcony2" tags="" position="300,1820">Before you had even noticed, the guards had rounded the people onto the curbside. They formed a line between them and the square, packing them in tight to make room for the procession. You hear trumpets blare from down main street, and soon music fills the air. Loud applause errupt as the first carriage makes it into the town square. A lord waves his hands at the crowd as his harolds wave their flags, and the vehicle is driven further. The lord of Autumnspire, Pikecrest, and Moonscrag are the first to pass. You recognize them by their emblems, which you know from stories and picturebooks. 
+
+A long line of lords and ladies proceed through the circle, and by now it spans the entire square. You can see the kings carriage approaching. It the tallest of the many vessels and drawn by 8 horses, probably to support the weight of the three massive thrones. 
+
+Atop the carriage is the royal family. The middle seat was the kings, but he was standing for the crowd. To his left was his wife, the Queen. She sat and waved to the crowd to tremendous cheers. She was young and beautiful, and much more loved than the last queen, or so you have heard. To the king&#x27;s left was one more, sitting quietly with her hands across her lap. Despite the fanfair she was inanimate, only occasionally glancing over the crowd. Her skin was dark bluish and dark, like the last lines of blue in a dusky sky. Her hair was a chilly white, like cascades of frozen water falling from her head. Reila, the princess. 
+&lt;img src = &quot;http://i.imgur.com/zT3Hdj9.png&quot; width=400 height=500/&gt;
+&quot;Ah, the royal family. And look, they even got Reila out hiding.&quot; Cyn watched the carriage as it came into the circle. &quot;It&#x27;s going to be a blood bath when the old man kicks. Or maybe sooner... it&#x27;s a messy business to get yourself involved in.&quot; Cyn passes you a glance, perhaps expecting a response. 
+
+[[&quot;What do you mean?&quot; --&gt; QuestionCyn]]
+[[&quot;That&#x27;s not funny.&quot; --&gt; ScoldCyn]]
+[[&quot;It wasn&#x27;t my choice.&quot; --&gt; SomethingCyn]]</tw-passagedata><tw-passagedata pid="32" name=" paraderoof2" tags="" position="503,1813">Before you had even noticed, the guards had rounded the people onto the curbside. They formed a line between them and the square, packing them in tight to make room for the procession. You hear trumpets blare from down main street, and soon music fills the air. Loud applause errupt as the first carriage makes it into the town square. A lord waves his hands at the crowd as his harolds wave their flags, and the vehicle is driven further. The lord of Autumnspire, Pikecrest, and Moonscrag are the first to pass. You recognize them by their emblems, which you know from stories and picturebooks. 
+
+A long line of lords and ladies proceed through the circle, and by now it spans the entire square. You can see the kings carriage approaching. It the tallest of the many vessels and drawn by 8 horses, probably to support the weight of the three massive thrones. 
+
+Atop the carriage is the royal family. The middle seat was the kings, but he was standing for the crowd. To his left was his wife, the Queen. She sat and waved to the crowd to tremendous cheers. She was young and beautiful, and much more loved than the last queen, or so you have heard. To the king&#x27;s left was one more, sitting quietly with her hands across her lap. Despite the fanfair she was inanimate, only occasionally glancing over the crowd. Her skin was dark bluish and dark, like the last lines of blue in a dusky sky. Her hair was a chilly white, like cascades of frozen water falling from her head. Reila, the princess. 
+&lt;img src = &quot;http://i.imgur.com/zT3Hdj9.png&quot; width=400 height=500/&gt;
+&quot;Ah, the royal family. And look, they even got Reila out of hiding.&quot; Cyn watched the carriage as it came into the circle. &quot;It&#x27;s going to be a blood bath when the old man kicks. Or maybe sooner... it&#x27;s a messy business to get yourself involved in.&quot; Cyn passes you a glance, perhaps expecting a response. 
+
+[[&quot;What do you mean?&quot; --&gt; QuestionCyn]]
+[[&quot;That&#x27;s not funny.&quot; --&gt; ScoldCyn]]
+[[&quot;It wasn&#x27;t my choice.&quot; --&gt; SomethingCyn]]</tw-passagedata><tw-passagedata pid="33" name=" paradestands2" tags="" position="704,1813">Before you had even noticed, the guards had rounded the people onto the curbside. They formed a line between them and the square, packing them in tight to make room for the procession. You hear trumpets blare from down main street, and soon music fills the air. Loud applause errupt as the first carriage makes it into the town square. A lord waves his hands at the crowd as his harolds wave their flags, and the vehicle is driven further. The lord of Autumnspire, Pikecrest, and Moonscrag are the first to pass. You recognize them by their emblems, which you know from stories and picturebooks. 
+
+A long line of lords and ladies proceed through the circle, and by now it spans the entire square. You can see the kings carriage approaching. It the tallest of the many vessels and drawn by 8 horses, probably to support the weight of the three massive thrones. 
+
+Atop the carriage is the royal family. The middle seat was the kings, but he was standing for the crowd. To his left was his wife, the Queen. She sat and waved to the crowd to tremendous cheers. She was young and beautiful, and much more loved than the last queen, or so you have heard. To the king&#x27;s left was one more, sitting quietly with her hands across her lap. Despite the fanfair she was inanimate, only occasionally glancing over the crowd. Her skin was dark bluish and dark, like the last lines of blue in a dusky sky. Her hair was a chilly white, like cascades of frozen water falling from her head. Reila, the princess. 
+&lt;img src = &quot;http://i.imgur.com/zT3Hdj9.png&quot; width=400 height=500/&gt;
+&quot;Ah, the royal family. And look, they even got Reila out of hiding.&quot; Cyn watched the carriage as it came into the circle. &quot;It&#x27;s going to be a blood bath when the old man kicks. Or maybe sooner... it&#x27;s a messy business to get yourself involved in.&quot; Cyn passes you a glance, perhaps expecting a response. 
+
+[[&quot;What do you mean?&quot; --&gt; QuestionCyn]]
+[[&quot;That&#x27;s not funny.&quot; --&gt; ScoldCyn]]
+[[&quot;It wasn&#x27;t my choice.&quot; --&gt; SomethingCyn]]</tw-passagedata><tw-passagedata pid="34" name=" QuestionCyn" tags="" position="300,2002">You aren&#x27;t sure what Cyn is implying. Yours was an honorable role, bestowed to you by birthright. You would become the king&#x27;s cloak and dagger; a shadow that befell the wicked. The line of succession was hardly your business. 
+
+&quot;I mean, when the King has a son- a good, normal son, with his beautiful human wife- he might not want to go down in history as the first king to seat a half-elf daughter on the throne.&quot; 
+
+A pit grew in your stomach. You knew that would never happen, but the very thought was upsetting. &quot;Oh, don&#x27;t worry. I&#x27;m sure he&#x27;ll just have of the chefs poison her or something. You&#x27;ll get off easy.&quot;
+
+As he spoke the king&#x27;s carriage rolled by. 
+
+As if she had known where to look, the princess&#x27;s gaze locks with yours. She has piercing violet eyes and a dainty face, characteristic of elves. Her white hair is brought back in a braid and draped over her right shoulder. She is eerily beautiful, in a way only elves can be. For a moment, you see a flash of white from between her lips... and the carriage passes.
+
+&quot;Well, there she goes. A wonderful birthday parade. Did you notice she was the only one not smiling?&quot; 
+
+But she did. Just for a moment. 
+
+[[The future --&gt; transition]]
+</tw-passagedata><tw-passagedata pid="35" name=" ScoldCyn" tags="" position="502,2001">You understand what Cyn was implying. Relia was the first born of the king, and by right the next Queen of the realm. But she was a dark-elf, or at least half one. A full human son, or even a daughter, would be a much better fit for monarch. Allowing her to take the throne would be a stain on the kings legacy, as he saw it. But still, to imply that the king would have you kill her... Cyn was crossing a line.
+
+&quot;The king wouldn&#x27;t order something like that... I&#x27;m here to serve the realm. Killing-&quot; the words got caught in your throat. &quot;Killing... a member of the royal family... wouldn&#x27;t happen.&quot; 
+
+&quot;Hmph. Don&#x27;t let them fool you. You exist to get around the rules.&quot; 
+
+As he spoke the king&#x27;s carriage rolled by. 
+
+As if she had known where to look, the princess&#x27;s gaze locks with yours. She has piercing violet eyes and a dainty face, characteristic of elves. Her white hair is brought back in a braid and draped over her right shoulder. She is eerily beautiful, in a way only elves can be. For a moment, you see a flash of white from between her lips... and the carriage passes. 
+
+&quot;Well, there she goes. A wonderful birthday parade. Did you notice she was the only one not smiling?&quot; 
+
+But she did. Just for a moment. 
+
+[[The future --&gt; transition]]</tw-passagedata><tw-passagedata pid="36" name=" SomethingCyn" tags="" position="706,1999">The thought of getting involved in the royal power struggle isn&#x27;t particularly appealing. You shake your head, sighing at the thought. &quot;I didn&#x27;t choose to get involved... they picked me.&quot;
+
+&quot;They may have chosen you, but you will choose your own fate. Who&#x27;s going to make you follow the king&#x27;s orders? The other court assassin? I don&#x27;t think so.&quot; Cyn snickered, flicking his tail back and forth. 
+
+As he spoke the king&#x27;s carriage rolled by. 
+
+As if she had known where to look, the princess&#x27;s gaze locks with yours. She has piercing violet eyes and a dainty face, characteristic of elves. Her white hair is brought back in a braid and draped over her right shoulder. She is eerily beautiful, in a way only elves can be. For a moment, you see a flash of white from between her lips... and the carriage passes. 
+
+&quot;Well, there she goes. A wonderful birthday parade. Did you notice she was the only one not smiling?&quot; 
+
+But she did. Just for a moment. 
+
+[[The future --&gt; transition]]</tw-passagedata><tw-passagedata pid="37" name="Back" tags="" position="901,2401">After a while trecking through the woods, you arrive at the opposite view of the mansion you had previously and begin to approach the building. There are very few gaurds on this side of the house, giving you more time to decide how to enter the mansion.
+
+You can either scale the walls and attempt to enter a window, or you may pick the lock on one of the back doors.
+
+[[Pick Lock-&gt;Floor1]]
+[[Scale Wall-&gt;Hanging]]</tw-passagedata><tw-passagedata pid="38" name="Front" tags="" position="1102,2399">You crouch low and make your way through the tall grass, being as inconspicuous as possible. You only move when the wind blows as to disguise the movement of the grass you inevitably disturb as you sneak. Timing the ruitines of gaurds, you eventually break through their perimeters and find yourself against one of the front walls of the house. You realize that you don&#x27;t have much time before the next partol comes through.
+
+You can either scale the walls to avoid the partols and possibly enter through a window, or make your way around the back of the house to buy more time.
+
+[[Climb the wall-&gt;Hanging]]
+[[Sneak around back-&gt;Back]]</tw-passagedata><tw-passagedata pid="39" name="Hanging" tags="" position="1100,2601">You look for a dark window and throw a grapple above it at one of the gargoyles perched atop the roof. It wraps around the little monster and hooks itself around one of the statues legs. You give it a tug to make sure it can hold your weight. Assured that you can safely climb, you begin your ascent pulling the rope up behind you so you don&#x27;t leave any trace of you previously having been there. 
+
+You reach the window on the third floor and thankfully it is unlocked. Why would it be, it&#x27;s 20 feet off the ground. You slowly open the window as to avoid making any noise.
+
+[[Enter the window-&gt;3rdF_Room]]
+[[Continue to hang-&gt;Hanging]]
+
+</tw-passagedata><tw-passagedata pid="40" name="Floor1" tags="" position="602,2500">You find yourself inside a dark room that has no windows, but is lit relatively well. It is the kitchen, and thankfully no one is cooking at this time of night. The kitchen is full of exotic spices hanging out to dry, vegitables covering the shelves, and casks of what smells like wine.
+
+There are two exits aside from the one you just came from. One that leads into the dining room, and a small servant staircase that undoubtedly has access to all floors. 
+
+[[Staircase-&gt;Servant_Stairs]]
+[[Dining Room-&gt;Dine_Room]]</tw-passagedata><tw-passagedata pid="41" name="3rdF_Room" tags="" position="1103,2900">The room is a dark living space. It is too dark to make out any sort of room details, however you notice that you are not alone. There are two people, husband and wife, sleeping in the bed right next to where you are standing. Luckily they haven&#x27;t noticed you, probably because the man is snoring quite loudly and his wife has her ears completley plugged with what you believe is a type of wax substance. 
+
+There is a door that leads into the hallway.
+
+[[Go into the hallway-&gt;3rd_Floor_Hall]]</tw-passagedata><tw-passagedata pid="42" name="Servant_Stairs" tags="" position="400,2701">The stairs are dimly lit and extremely narrow. You make your way up and find a door that undoubtedly leads to a second floor hallway. There are more stairs that go up to the third floor.
+
+[[Enter the second floor-&gt;2nd_Floor_Hall]]
+[[Go to the third floor-&gt;3rd_Floor_Hall]]</tw-passagedata><tw-passagedata pid="43" name="Dine_Room" tags="" position="801,2699">The dining room is lavish and posh. There are decorations covering almost every inch of every wall. Paintings, weaponry, armor, statues, and trinkets. The table itself takes up the majority of the space. Large dark polished wooden table, surrounded by intricately carved chairs of the same color and shine, with red cushions in the seat. It isn&#x27;t set up, since there isn&#x27;t a meal due until morning. However, it is just as impressive without the cutlery and dishes. 
+
+From here you may enter the main hall, which is likely full of gaurds, or you may re-enter the kitchen.
+
+[[Kitchen-&gt;Kitchen_Otherside]]
+[[Prepare to fight and enter the main hall-&gt;MainHall]]</tw-passagedata><tw-passagedata pid="44" name="Kitchen_Otherside" tags="" position="598,2699">You find yourself inside a dark room that has no windows, but is lit relatively well. It is the kitchen, and thankfully no one is cooking at this time of night. The kitchen is full of exotic spices hanging out to dry, vegitables covering the shelves, and casks of what smells like wine.
+
+There are two exits aside from the one you just came from. One that leads outside, and a small servant staircase that undoubtedly has access to all floors. 
+
+[[Go outside-&gt;Back]]
+[[Go to the staircase-&gt;Servant_Stairs]]</tw-passagedata><tw-passagedata pid="45" name="MainHall" tags="" position="699,2901">To your shock there was only one gaurd, and he hasn&#x27;t noticed you yet. He is facing the front entrance and you have time to decide what to do with him.
+
+[[Kill-&gt;Kill]]
+[[Put to sleep-&gt;Sleep]]</tw-passagedata><tw-passagedata pid="46" name="Kill" tags="" position="603,3097">You pull out a knife and swiftly jab it into the base of the mans skull. You catch his body and sneak it into the dining room and hide it under the table. Once you finish making sure there is no visible sign of your deed, you re-enter the main hall and try to decide where to go. 
+
+There are curving stairs that go up the sides of the room on both ends leading to the second floor. Then there is the main entrance that goes outside, which you decide is coutnerproductive and not really an option. 
+
+[[Climb the Stairs to the second floor-&gt;2nd_Floor_Hall]]
+</tw-passagedata><tw-passagedata pid="47" name="Sleep" tags="" position="802,3099">You cover the mans mouth and put him into a headlock. Once he stops struggling and goes silent you catch his body and sneak his it into the dining room and hide it under the table. Once you finish making sure there is no visible sign of your deed, you re-enter the main hall and try to decide where to go. 
+
+There are curving stairs that go up the sides of the room on both ends leading to the second floor. Then there is the main entrance that goes outside, which you decide is coutnerproductive and not really an option. 
+
+[[Climb the Stairs to the second floor-&gt;2nd_Floor_Hall]]</tw-passagedata><tw-passagedata pid="48" name="2nd_Floor_Hall" tags="" position="500,2900">There are multiple doors on either side of the decorated hallway. The lighting is dim, only one lamp roughly every 7 feet. You decide that this hallway is not likely to hold the noble and is more reasonably reserved for guests. You see another staircase own at the other end of the hallway that likely goes up to the third floor.
+
+[[Go to the main Staircase-&gt;Main_stairs]]
+[[Go back into the servant staircase-&gt;Servant_Stairs]]</tw-passagedata><tw-passagedata pid="49" name="3rd_Floor_Hall" tags="" position="200,2900">The hallway is well lit but not very long. There is a long red rug on the floor and detailed portaits covering the walls. This is definitely the royal quarters. Down the near the end of the hall, about 10 feet away, is a set of double doors with two gaurds posted in front of it. You freeze in hopes that they haven&#x27;t noticed your presence. Unfortunately they have and they begin to ready themselves for a fight and yell! &quot;Intru-!&quot;
+
+Out of instinct you fling two knives at the mens throats, each hitting their target dead on. They drop their weapons, hands raising to their necks, eyes widening at the realization of their impending deaths. They each drop to their knees bleeding profusely from their wounds, and eventually collapse onto the floor dead.
+
+After turning to make sure no one else heard their call, and are coming up the stairs. You hear nothing after a long while and assume no one heard, so you approach the double doors.
+
+You tip-toe around the two bodies and slowly push open one of the doors and enter the dark room.
+
+[[Enter-&gt;Bedroom]]
+
+</tw-passagedata><tw-passagedata pid="50" name="Main_stairs" tags="" position="399,3102">The main stairs are a grand spiral staircase. The stairs are covered in a fancy rug, and the railing is intricately carved darkwood. There is also a massive chandelier in the center of the spiral.
+
+[[Go to the third floor-&gt;3rd_Floor_Hall]]
+</tw-passagedata><tw-passagedata pid="51" name="Bedroom" tags="" position="200,3101">The room is dark but you hear a scuffle on the floor across the room. Suddenly a lamp is lit revealing your surroundings in a dim light. You see silhouette&#x27;s of furniture all across the room and before you is a large decorated bed that is surrounded in a translucent veil. Standing in front of you with a delicate feminine figure in a lightly colored night gown is your target. She raises the lamp closer to her face revealing her true identity. 
+
+[[Find out your targets identity-&gt;ReiREi]]</tw-passagedata><tw-passagedata pid="52" name="ReiREi" tags="" position="198,3299">&lt;img src = &quot;http://i.imgur.com/zT3Hdj9.png&quot; width=400 height=500 /&gt;
+
+&quot;Reila!?&quot; you say in a slightly too loud voice.
+
+&quot;I assume my racist father sent you to kill me. Am I right?&quot; Reila asked ins a suprisingly calm tone.
+
+&quot;Wait...You were expecting this? It doesn&#x27;t shock you that your father wants to murder you in cold blood?!&quot; You ask incredulously.
+
+&quot;No.&quot;
+
+&quot;Oh.&quot; 
+
+You both stand in silence for an uncomfortable amount of time while you try to think of what to say.
+
+[[What did you do to inspire your fathers resentment?-&gt;Explain]]
+[[I didn&#x27;t realize your father was such a racist.-&gt;Yep]]
+
+
+</tw-passagedata><tw-passagedata pid="53" name="Explain" tags="" position="98,3500">Reila sighs and takes in a deep breath. &quot;My father has hated me ever since my mother died 17 years ago. I don&#x27;t really remember what he was like before that... but I know that for all of my life, he&#x27;s been looking for ways to get rid of me. He wants to make sure that I&#x27;m not part of the line of succession.&quot;
+
+You put the rest together by yourself. The signs were there. The king had been doting over the young prince ever since he birth, and had been preparing him for the role of king. As a half-elf Reila was pracitcally immortal- she could live hundreds of years, and would see countless generations of her brother&#x27;s lineage before her own death. The king wanted her gone. 
+
+&quot;So? What&#x27;s it going to be?&quot; Reila voice was firm. She kept a straight face but you could sense her fear. You were accustomed to it. You could see she was holding something beneath her blouse. A knife, by the looks of it. If it came to a fight, she would be dead long before she could draw it. 
+
+[[&quot;I&#x27;ll kill the king.&quot; --&gt; Killtheking]]
+[[&quot;We could run away.&quot; --&gt; Flee]]
+[[&quot;I&#x27;m sorry. This is who I am.&quot; --&gt; Killreila]]</tw-passagedata><tw-passagedata pid="54" name="Yep" tags="" position="301,3498">&quot;Really? You didn&#x27;t?&quot; Asked Reila in suprise. &quot;I thought the signs were all fairly obvious.&quot;
+&lt;img src = &quot;http://i.imgur.com/zT3Hdj9.png&quot; width=400 height=500 /&gt;
+
+[[&quot;Maybe I just don&#x27;t pay attention. Care to explain?&quot;-&gt;Explain]]</tw-passagedata><tw-passagedata pid="55" name=" transition" tags="" position="497,2149">	Eight years have passed. You have gone through long and arduous training to become the royal assassin. Your achievements are many, and the list of lives consigned to the void father long. You spent 5 years under the lead of your mentor, sharpening your skills and proving your metal. You have returned from a long trip to the North, where you put an end to the usurper Rayold. His list of titles was once long, but now all that remains of him is a memory. 
+	
+	Among the court you have become a legend; your name is synonymous with death. Your title affords you many luxuries when you are not off doing the king’s bidding, and live in relative peace. Cyn, your faithful companion of 9 years, is one of the few voices you often hear in your quiet abode.  Nobles flee your gaze, as if fearing that your very sight will inflict them with death. 
+	
+		RE-LIVE THE EPIC ADVENTURE OF THE UNNAMED PROTAGONIST (YOU) IN THE THRILLING DLC: *DARK ELF, ORIGINS: CHAIN OF MEMORIES.*
+	
+		Word has come that the king has sent for you once again. Cyn is still tired from the journey, and tells you he will sit this one out. You grab your gear and [[head to the throne room -&gt;King_Approaches]]. 
+</tw-passagedata><tw-passagedata pid="56" name=" Killtheking" tags="" position="107,3678">&quot;You&#x27;re going to... kill my father?&quot; Reila said in surprise. The knife fell form her hand and hit the ground. &quot;I- why?&quot;
+
+&quot;Your one of my only friends. I... I&#x27;m an the Royal Assassin. I was born to kill the enemies of the king, but...&quot; you can&#x27;t find the words. &quot;I can&#x27;t kill you Reila... and I won&#x27;t let the king find someone else to do it. And I won&#x27;t let him put me down like a dog. I&#x27;ll end this myself.&quot; 
+
+You were crying. All of this hard work. Years of praise and admiration, years of believing that you were honorable and right... and soon it would all be over. You would throw away your identity as the royal assassin and commit the ultimate betrayal. But you were prepared. You peak up and see Reila, standing by her bed. You look into her eyes, and look for a sign of approval. Anything. She reaches up and rubs the tears from her eyes, flashing you a pained smile.
+
+&quot;Go. Put an end to this.&quot; 
+
+You turn and break into a sprint.
+
+You retrace your steps. After a long journey back you arrive at the throne room. The guards have let you in. The king is sitll awake, sitting on his throne. He&#x27;s lost in a goblet of wine. It takes a few moments, but he notices your presence. &quot;Ah, the faithful assassin returns. How did it go? Did she give you any trouble?&quot; He cracks a sly smile, raising his cup to you. &quot;Come, have a drink.&quot;
+
+You approach the king and give him a silent stare. He watches you for a few moments, still in a drunken stupor, and then he realizes. &quot;N-no. You can&#x27;t.&quot; 
+
+You draw your dagger, and stab him through the throat. 
+
+Months have passed since you killed the king. Reila has taken the throne, the rightful heir. Rumors fill the kigndom about the strange end of their king, but no one dares to question what happened. Reila worked to cover up the assassination to surprising success; the king had few allies in the court. 
+
+You now sit next to Reila at the throne. You have earned your position at her side and serve now as an advisor. Cyn, your loyal companion, was given a fief in the south, and rules over his own castle. You live your days dealing with the strife and turmoil of politics, but happy nonetheless. </tw-passagedata><tw-passagedata pid="57" name=" Flee" tags="" position="255,3676">&quot;We&#x27;re going to run. We can get out of the castle and get some horses, and make a break for the south. If we can get over the border, we&#x27;ll find refuge in Southland... somehow.&quot; 
+
+Reila seems surprised by your sudden proposition, and shakes her head. &quot;I can&#x27;t... how will we survive? People will know its me.&quot;
+
+&quot;Southland is the home of the darkelves. You&#x27;ll fit in there... we&#x27;ll find a way. Please. I don&#x27;t want to kill you.&quot; You look Reila in the eyes, tears flowing down your cheeks. Other than Cyn, she was your only friend. You couldn&#x27;t have it end like this. 
+
+&quot;I... alright,&quot; she dropped the knife she was hiding behind her, and steps forward. &quot;I&#x27;ll do it.&quot; You nod, and tell her to grab her things. She runs around the room, collecting what valuables she has. 
+
+&quot;Let&#x27;s go.&quot; 
+
+You leave with the princess. You steal horses from the stable and make south, covering as much land as possible. You drive the horses to near death in your flight, trying to outrun the news. The king would know by morning that you had betrayed him. You needed to be fast. When you look over to Reila, you see something odd. She&#x27;s smiling. You steel your heart and press on. 
+
+A month as passed, and you have made it Southland. The possessions you managed to bring with you from the castle have afforded you a small homestead- the gems and currency were quite valuable, although your current position is a step down from royalty. The king has ordered your execution for &quot;kidnapping&quot; the princess, but Southland has been sympathetic of your plight. They hate the king almost as much as he hates darkelves. 
+
+You live your life besides Reila in domestic peace. Although things are hard, and sometimes strange, you&#x27;ve found a peaceful routine. You could live like this for a while longer, you think.</tw-passagedata><tw-passagedata pid="58" name=" Killreila" tags="" position="400,3675">&quot;I&#x27;m sorry,&quot; you say, &quot;this is who I am.&quot; Reila&#x27;s eyes widen in fear as she reachers for her dagger. You dash forward, so quick, quicker than she could possibly imagine, and stab her through the chest. She drops the dagger, her body growing limp. She seems as if she wants to say something, but can&#x27;t. As her eyes grow dull, you see the strangest expression on her face- a smile, welling with blood. 
+
+You return the king victorious. You have proven your loyalty and worth as an assassin, and in return he has offered you the highest honors. You have been given a castle in the North to rule over, although you rarely time to go under the kings constant orders. The death of the princess sparked protests and rebellion all over the kingdom, and someone must go to make sure such movements do not grow. 
+
+You are the most feared man in all the kingdom, and have truly fulfilled your role as an assassin. 
+
+Sometimes, you still see Reila in your dreams. She is as she was at the parade, a delicate little girl in a fine dress, looking scared and out of pace. She looks up from the carriage and catches your eyes, and for a moment, you see a bloody smile. </tw-passagedata></tw-storydata>
